@@ -1,0 +1,85 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'prune' ]
+2 info using npm@3.3.8
+3 info using node@v0.12.7
+4 warn package.json hobinutAdmin@0.0.0 No description
+5 warn package.json hobinutAdmin@0.0.0 No repository field.
+6 warn package.json hobinutAdmin@0.0.0 No README data
+7 warn package.json hobinutAdmin@0.0.0 No license field.
+8 verbose unbuild node_modules/minijasminenode
+9 verbose unbuild node_modules/protractor
+10 verbose unbuild node_modules/phantomjs
+11 info lifecycle minijasminenode@1.1.1~preuninstall: minijasminenode@1.1.1
+12 info lifecycle phantomjs@1.9.19~preuninstall: phantomjs@1.9.19
+13 info lifecycle protractor@1.8.0~preuninstall: protractor@1.8.0
+14 silly lifecycle minijasminenode@1.1.1~preuninstall: no script for preuninstall, continuing
+15 silly lifecycle phantomjs@1.9.19~preuninstall: no script for preuninstall, continuing
+16 silly lifecycle protractor@1.8.0~preuninstall: no script for preuninstall, continuing
+17 info lifecycle minijasminenode@1.1.1~uninstall: minijasminenode@1.1.1
+18 info lifecycle phantomjs@1.9.19~uninstall: phantomjs@1.9.19
+19 info lifecycle protractor@1.8.0~uninstall: protractor@1.8.0
+20 silly lifecycle minijasminenode@1.1.1~uninstall: no script for uninstall, continuing
+21 silly lifecycle phantomjs@1.9.19~uninstall: no script for uninstall, continuing
+22 silly lifecycle protractor@1.8.0~uninstall: no script for uninstall, continuing
+23 verbose unbuild rmStuff minijasminenode@1.1.1 from /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules
+24 silly gentlyRm /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/minijasminenode is being gently removed from base /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/minijasminenode
+25 verbose unbuild rmStuff phantomjs@1.9.19 from /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules
+26 silly gentlyRm /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/phantomjs is being gently removed from base /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/phantomjs
+27 verbose unbuild rmStuff protractor@1.8.0 from /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules
+28 silly gentlyRm /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/protractor is being gently removed from base /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/protractor
+29 silly gentlyRm /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/webdriver-manager is being gently removed from base /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/protractor
+30 silly gentlyRm verifying /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/phantomjs is an npm working directory
+31 silly gentlyRm verifying /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/minijasminenode is an npm working directory
+32 silly gentlyRm verifying /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/protractor is an npm working directory
+33 silly gentlyRm verifying /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/protractor is an npm working directory
+34 silly gentlyRm containing path /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/phantomjs is under npm's control, in /Users/lhtan/Documents/nodejs/angular-express-generator
+35 silly gentlyRm /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/phantomjs is not under /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/phantomjs
+36 silly gentlyRm verifying /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/phantomjs is an npm working directory
+37 silly gentlyRm containing path /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/minijasminenode is under npm's control, in /Users/lhtan/Documents/nodejs/angular-express-generator
+38 silly gentlyRm /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/minijasminenode is not under /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/minijasminenode
+39 silly gentlyRm verifying /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/minijasminenode is an npm working directory
+40 silly isManaged /Users/lhtan/Documents/nodejs/angular-express-generator is not inside /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/protractor
+41 silly gentlyRm containing path /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/protractor is under npm's control, in /Users/lhtan/Documents/nodejs/angular-express-generator
+42 silly gentlyRm /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/webdriver-manager is not under /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/protractor
+43 silly gentlyRm verifying /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/webdriver-manager is an npm working directory
+44 silly gentlyRm /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/phantomjs is under npm's control, in /Users/lhtan/Documents/nodejs/angular-express-generator
+45 verbose gentlyRm /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/phantomjs is not under npm's control
+46 silly gentlyRm checking to see if /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/phantomjs is a link
+47 silly gentlyRm /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/minijasminenode is under npm's control, in /Users/lhtan/Documents/nodejs/angular-express-generator
+48 verbose gentlyRm /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/minijasminenode is not under npm's control
+49 silly gentlyRm checking to see if /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/minijasminenode is a link
+50 silly isManaged /usr/local is not inside /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/protractor
+51 silly gentlyRm /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/webdriver-manager is under npm's control, in /Users/lhtan/Documents/nodejs/angular-express-generator
+52 verbose gentlyRm /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/webdriver-manager is not under npm's control
+53 silly gentlyRm checking to see if /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/webdriver-manager is a link
+54 error gentlyRm /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/phantomjs is outside /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/phantomjs and not a link
+55 error gentlyRm /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/minijasminenode is outside /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/minijasminenode and not a link
+56 silly isManaged /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules is not inside /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/protractor
+57 silly gentlyRm containing path /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/protractor is under npm's control, in /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules
+58 silly gentlyRm /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/protractor is not under /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/protractor
+59 silly gentlyRm verifying /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/protractor is an npm working directory
+60 error gentlyRm /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/webdriver-manager is outside /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/protractor and not a link
+61 silly gentlyRm /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/protractor is under npm's control, in /Users/lhtan/Documents/nodejs/angular-express-generator
+62 verbose gentlyRm /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/protractor is not under npm's control
+63 silly gentlyRm checking to see if /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/protractor is a link
+64 error gentlyRm /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/protractor is outside /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/protractor and not a link
+65 verbose stack Error: Refusing to delete: /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/phantomjs not in /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/phantomjs
+65 verbose stack     at clobberFail (/usr/local/lib/node_modules/npm/lib/utils/gently-rm.js:192:12)
+65 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/gently-rm.js:121:20
+65 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/gently-rm.js:207:18
+65 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-cmd-shim/index.js:45:12
+65 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:76:16
+65 verbose stack     at fs.js:334:14
+65 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:42:10
+65 verbose stack     at FSReqWrap.oncomplete (fs.js:95:15)
+66 verbose cwd /Users/lhtan/Documents/nodejs/angular-express-generator
+67 error Darwin 15.2.0
+68 error argv "node" "/usr/local/bin/npm" "prune"
+69 error node v0.12.7
+70 error npm  v3.3.8
+71 error path /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/phantomjs
+72 error code EEXIST
+73 error Refusing to delete: /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/phantomjs not in /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/phantomjs
+File exists: /Users/lhtan/Documents/nodejs/angular-express-generator/node_modules/.bin/phantomjs
+Move it away, and try again.
+74 verbose exit [ 1, true ]
