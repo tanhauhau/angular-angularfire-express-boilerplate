@@ -184,9 +184,6 @@ gulp.task('build', function(cb) {
 
 // Default task: builds your app, starts a server, and recompiles assets when they change
 gulp.task('default', ['server'], function () {
-    // Watch Sass
-    gulp.watch(['./client/assets/scss/**/*', './scss/**/*'], ['sass', 'wiredep']);
-
     // Watch JavaScript
     gulp.watch(paths.appJS, ['copy:js', 'wiredep']);
 
@@ -199,9 +196,9 @@ gulp.task('default', ['server'], function () {
     // Watch static files
     gulp.watch(paths.assets, ['copy']);
 
-    // Watch app templates
+    // Watch index.html
     gulp.watch(['./client/index.html'], ['wiredep:direct']);
 
     // Watch bower_components
-    gulp.watch(['./bower_components/*'], ['wiredep']);
+    gulp.watch(['./bower_components/*', './bower.json'], ['wiredep']);
 });
