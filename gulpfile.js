@@ -197,21 +197,21 @@ gulp.task('default', ['server'], function () {
     });
     //watch add/change file
     $.watch(paths.appJS, {events: ['add', 'change']}, function(){
-        runSequence('copy:js', 'wiredep');
+        $.runSequence('copy:js', 'wiredep');
     });
     $.watch(paths.appCSS, {events: ['add', 'change']}, function(){
-        runSequence('copy:css', 'wiredep');
+        $.runSequence('copy:css', 'wiredep');
     });
     $.watch(paths.appImage, {events: ['add', 'change']}, function(){
-        runSequence('copy:images', 'wiredep');
+        $.runSequence('copy:images', 'wiredep');
     });
     $.watch(paths.assets, {events: ['add', 'change']}, function(){
-        runSequence('copy');
+        $.runSequence('copy');
     });
     $.watch(['./bower_components/*', './bower.json'], {events: ['add', 'change']}, function(){
-        runSequence('wiredep');
+        $.runSequence('wiredep');
     });
     $.watch('./client/index.html', {events: ['add', 'change']}, function(){
-        runSequence('wiredep:direct');
+        $.runSequence('wiredep:direct');
     });
 });
