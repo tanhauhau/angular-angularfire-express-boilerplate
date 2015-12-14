@@ -184,21 +184,34 @@ gulp.task('build', function(cb) {
 
 // Default task: builds your app, starts a server, and recompiles assets when they change
 gulp.task('default', ['server'], function () {
-    // Watch JavaScript
-    gulp.watch(paths.appJS, ['copy:js', 'wiredep']);
 
-    // Watch CSS
-    gulp.watch(paths.appCSS, ['copy:css', 'wiredep']);
-
-    // Watch image
-    gulp.watch(paths.appImage, ['copy:images', 'wiredep']);
-
-    // Watch static files
-    gulp.watch(paths.assets, ['copy']);
-
-    // Watch index.html
-    gulp.watch(['./client/index.html'], ['wiredep:direct']);
-
-    // Watch bower_components
-    gulp.watch(['./bower_components/*', './bower.json'], ['wiredep']);
+    //watch deleted file / folder
+    $.watch(['./client/**/*.*', '!./client/**/*.*~', './client/**/'], {events: ['unlink', 'unlinkDir']}, function(file){
+        if (file !== null) {
+            var deletefile = './www/'+file.relative;
+            trash([deletefile])
+            .then(function(){
+                console.log("deleted " + deletefile);
+            });
+        }
+    });
+    //watch add/change file
+    $.watch(paths.appJS, {events: ['add', 'change']}, function(){
+        runSequence('copy:js', 'wiredep');
+    });
+    $.watch(paths.appCSS, {events: ['add', 'change']}, function(){
+        runSequence('copy:css', 'wiredep');
+    });
+    $.watch(paths.appImage, {events: ['add', 'change']}, function(){
+        runSequence('copy:images', 'wiredep');
+    });
+    $.watch(paths.assets, {events: ['add', 'change']}, function(){
+        runSequence('copy');
+    });
+    $.watch(['./bower_components/*', './bower.json'], {events: ['add', 'change']}, function(){
+        runSequence('wiredep');
+    });
+    $.watch('./client/index.html', {events: ['add', 'change']}, function(){
+        runSequence('wiredep:direct');
+    });
 });
